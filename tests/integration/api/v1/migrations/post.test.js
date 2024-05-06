@@ -8,7 +8,7 @@ async function clearDatabase() {
 
 
 test("POST to /api/v1/migrations should returns 200", async () => {
-  const response1 = await fetch("http://localhost:3001/api/v1/migrations", {
+  const response1 = await fetch("http://localhost:3000/api/v1/migrations", {
     method: "POST"
   })
   const response1Body = await response1.json();
@@ -18,7 +18,7 @@ test("POST to /api/v1/migrations should returns 200", async () => {
 
 
 
-  const response2 = await fetch("http://localhost:3001/api/v1/migrations", {
+  const response2 = await fetch("http://localhost:3000/api/v1/migrations", {
     method: "POST"
   })
   const response2Body = await response2.json();
