@@ -1,6 +1,0 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Faz com que a div ocupe a altura total da tela */
-}
