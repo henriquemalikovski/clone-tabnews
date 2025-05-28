@@ -8,7 +8,7 @@ async function getOptionsMigrations(dbClient, dryRun = false) {
     dryRun: dryRun,
     dir: resolve("infra", "migrations"),
     direction: "up",
-    verbose: true,
+    log: () => {},
     migrationsTable: "pgmigrations",
   };
 
