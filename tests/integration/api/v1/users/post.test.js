@@ -88,7 +88,7 @@ describe("POST /api/v1/users", () => {
       expect(response2Body).toEqual({
         name: "ValidationError",
         message: "Email already exists",
-        action: "Please use a different email to create a new user.",
+        action: "This email is not available. Please use a different one.",
         statusCode: 400,
       });
     });
@@ -126,7 +126,7 @@ describe("POST /api/v1/users", () => {
       expect(response2Body).toEqual({
         name: "ValidationError",
         message: "Username already exists",
-        action: "Please use a different username to create a new user.",
+        action: "This username is not available. Please use a different one.",
         statusCode: 400,
       });
     });

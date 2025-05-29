@@ -19,7 +19,7 @@
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:check": "next lint --dir .",
     "prepare": "husky",
-    "commit": "npm run lint:prettier:fix && cz"
+    "commit": "cz"
   },
   "author": "",
   "license": "MIT",
